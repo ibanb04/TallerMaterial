@@ -9,4 +9,10 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="crear_libro">CREAR LIBROS</string>
+    <string name="isbn">ISBN</string>
+    <string name="nombre">Nombre</string>
+    <string name="autor">Autor</string>
+    <string name="guardar">Guardar</string>
+    <string name="limpiar">Limpiar</string>
 </resources>
