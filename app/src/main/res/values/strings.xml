@@ -15,4 +15,6 @@
     <string name="autor">Autor</string>
     <string name="guardar">Guardar</string>
     <string name="limpiar">Limpiar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="detalle_libros">DETALLE LIBROS</string>
 </resources>
