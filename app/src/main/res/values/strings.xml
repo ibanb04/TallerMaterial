@@ -17,4 +17,5 @@
     <string name="limpiar">Limpiar</string>
     <string name="eliminar">Eliminar</string>
     <string name="detalle_libros">DETALLE LIBROS</string>
+    <string name="msj_guardado_exitosamente">Libro Guardado Exitosamente!</string>
 </resources>
