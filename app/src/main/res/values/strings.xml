@@ -18,4 +18,9 @@
     <string name="eliminar">Eliminar</string>
     <string name="detalle_libros">DETALLE LIBROS</string>
     <string name="msj_guardado_exitosamente">Libro Guardado Exitosamente!</string>
+    <string name="seleccionar_foto">seleccione la foto de la persona</string>
+    <string name="Titulo_eliminar">Eliminar Libro</string>
+    <string name="mensaje_eliminar">¿Estas seguro de eliminar este libro?</string>
+    <string name="mensaje_positivo">Si</string>
+    <string name="mensaje_negativo">No</string>
 </resources>
