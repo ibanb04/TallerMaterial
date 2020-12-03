@@ -1,5 +1,6 @@
 package com.example.tallermaterial;
 
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,6 +8,11 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -33,6 +39,16 @@ public class AdaptadorLibro extends  RecyclerView.Adapter<AdaptadorLibro.LibroVi
     @Override
     public void onBindViewHolder(@NonNull LibroViewHolder holder, int position) {
         Libro l = libros.get(position);
+        StorageReference storageReference;
+        storageReference = FirebaseStorage.getInstance().getReference();
+
+        storageReference.child(l.getId()).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Picasso.get().load(uri).into(holder.foto);
+            }
+        });
+
         holder.isbn.setText(l.getISBN());
         holder.nombre.setText(l.getNombre());
         holder.autor.setText(l.getAutor());

@@ -12,6 +12,9 @@ public class Libro {
         this.autor = autor;
         this.id = id;
     }
+    public Libro(){
+
+    }
     public String getISBN() {
         return ISBN;
     }
