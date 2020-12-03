@@ -21,12 +21,13 @@
         android:layout_width="222dp"
         android:layout_height="165dp"
         android:layout_gravity="center_horizontal"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
 
     <EditText
         android:id="@+id/txtISBN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10sp"
         android:ems="10"
         android:hint="@string/isbn"
         android:inputType="number" />
@@ -35,6 +36,7 @@
         android:id="@+id/txtNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10sp"
         android:ems="10"
         android:hint="@string/nombre"
         android:inputType="textPersonName" />
@@ -43,6 +45,7 @@
         android:id="@+id/txtAutor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10sp"
         android:ems="10"
         android:hint="@string/autor"
         android:inputType="textPersonName" />
@@ -56,15 +59,19 @@
             android:id="@+id/btnGuardar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
             android:layout_weight="1"
             android:onClick="guardar"
             android:text="@string/guardar" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnLimpiar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
             android:layout_weight="1"
+            android:onClick="limpiar"
             android:text="@string/limpiar" />
     </LinearLayout>
 
