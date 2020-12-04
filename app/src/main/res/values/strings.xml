@@ -23,4 +23,9 @@
     <string name="mensaje_eliminar">¿Estas seguro de eliminar este libro?</string>
     <string name="mensaje_positivo">Si</string>
     <string name="mensaje_negativo">No</string>
+    <string name="mensaje_error_ISBN">Digite el ISBN</string>
+    <string name="mensaje_error_nombre">Coloque el nombre</string>
+    <string name="mensaje_error_autor">Coloque el autor</string>
+    <string name="mensaje_error_foto">Selecciona una foto</string>
+    <string name="mensaje_error_isbn">Ya existe un libro con este ISBN</string>
 </resources>
