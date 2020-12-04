@@ -34,13 +34,6 @@ public class CrearLibro extends AppCompatActivity {
     private StorageReference storageReference;
     private boolean bandera = false;
 
-    /*
-
-    private ArrayList<Libro> libros;
-
-
-
-    */
     private String db = "Libros";
     private DatabaseReference databaseReference;
 
@@ -73,10 +66,7 @@ public class CrearLibro extends AppCompatActivity {
 
         if (validar()) {
 
-           /* if (bandera) {
-                Snackbar.make(v, "No se puede guardar por que ya existe el isbn",
-                        Snackbar.LENGTH_LONG).show();
-            }else{*/
+
                 isbn = ISBN.getText().toString();
                 nom = nombre.getText().toString();
                 aut = autor.getText().toString();
@@ -94,7 +84,7 @@ public class CrearLibro extends AppCompatActivity {
                     Snackbar.make(v, R.string.mensaje_error_isbn,
                             Snackbar.LENGTH_LONG).show();
                 }
-           // }
+
         }
     }
 
@@ -166,22 +156,6 @@ public class CrearLibro extends AppCompatActivity {
             }
         });
 
-
-        /*Query isbnQuery = databaseReference.orderByChild("isbn").equalTo(isbn).limitToFirst(1);
-        isbnQuery.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.exists()){
-                    bandera = true;
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-*/
     }
 
     public boolean validar(){
